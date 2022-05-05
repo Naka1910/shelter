@@ -1,4 +1,6 @@
-
+*{
+    scroll-behavior: smooth;
+}
 .main{
     max-width: 1280px;
     width: 100%;
