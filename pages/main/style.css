@@ -232,9 +232,9 @@ img{
     border-bottom:2px #5B483A solid;
     transition: 2s;  
  }
- 
-
-
+ .Card:hover{
+    background-color: #e1e1e1;
+}
 .Card{
  width: 270px;
  height: 435px;
@@ -242,6 +242,8 @@ img{
  flex-direction: column;
  align-items: center;
  justify-content: center;
+ background-color: #FAFAFA;
+
 }
 .Card-button{
     width: 187px;
