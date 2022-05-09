@@ -4,6 +4,6 @@
 
 
   Shelter-2
-  https://Naka1910.github.io/shelter/pages/pets/
+  https://Naka1910.github.io/shelter/pages/pets/pets.html
 
 
