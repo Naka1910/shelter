@@ -1,3 +1,6 @@
+body::-webkit-scrollbar {
+    display: none; /* for Chrome, Safari, and Opera */
+}
 *{
     scroll-behavior: smooth;
 }
@@ -79,6 +82,22 @@ width: 100%;
 }
 .active:hover{
     border:none;  
+}
+.bar-menu{
+    display: none;
+}
+@media(max-width:768px){
+    .Header nav{
+        display: none;
+    }
+    .bar-menu{
+        display: block;
+        font-size: 40px;
+        color: #F1CDB3;
+    }
+    .Section-2{
+     padding-top:20px;
+    }
 }
 /* Header ends */
 
