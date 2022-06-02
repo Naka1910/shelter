@@ -1,5 +1,5 @@
 body::-webkit-scrollbar {
-    display: none; /* for Chrome, Safari, and Opera */
+    display: none; 
 }
 *{
     scroll-behavior: smooth;
@@ -21,7 +21,7 @@ width: 100%;
     padding-top: 60px;
 }
 .Header{
-    width: 100%;
+    max-width: 100%;
     height: 60px;
     display: flex;
     justify-content: space-between;
@@ -48,19 +48,20 @@ width: 100%;
     font-weight: 400;
     padding-bottom: 20px;
 }
-.Header nav{
+.Header-nav{
     width: 443px;
+
 }
-.Header nav ul{
+.Header-nav ul{
     display: flex;
     justify-content: space-between;
 }
-.Header nav ul li{
+.Header-nav ul li{
     list-style: none;
 
    
 }
-.Header nav ul li .diff-a{
+.Header-nav ul li .diff-a{
     color:#CDCDCD;
     text-decoration: none;
     font-family:'Arial';
@@ -85,19 +86,130 @@ width: 100%;
 }
 .bar-menu{
     display: none;
+    position: relative;
+        top: 11%;
+        left: 85%;
 }
+
+
 @media(max-width:768px){
-    .Header nav{
+    .Header-nav{
         display: none;
     }
     .bar-menu{
         display: block;
         font-size: 40px;
         color: #F1CDB3;
+        position: sticky;
+        top: 11%;
+        left: 85%;
+        margin-bottom: 10px;
+        cursor: pointer;
+
     }
     .Section-2{
      padding-top:20px;
     }
+
+}
+@media(max-width:320px) {
+    .active-dise{
+    color: #FAFAFA;
+    border-bottom: 2px #F1CDB3 solid;
+    text-decoration: none;
+    font-family: 'Arial';
+    font-size: 32px;
+    line-height: 51.2px;
+    font-weight: 400;
+    font-style: normal;
+    }
+    .side-a{
+        color:#CDCDCD;
+        text-decoration: none;
+        font-family:'Arial';
+        line-height: 51.2px;
+        font-size: 32px;
+        font-weight: 400;
+    }
+    
+}
+/* @media(max-width:720px){
+    .bar-menu{
+        display: none;
+    }
+} */
+.side-menu{
+    position: absolute;
+    top: -30px;
+    right: 0px;
+    background-color: #292929;
+    height: 545px;
+    width: 350px;
+    display: none;
+    z-index: 10;
+    
+}
+.side-menu a{
+ text-decoration: none;
+ 
+}
+.unordered-lists{
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    justify-content: space-around;
+   
+}
+.side-menu ul li{
+    cursor: pointer;
+}
+
+.unordered-lists{
+    list-style: none;
+}
+.side-a{
+    color:#CDCDCD;
+    text-decoration: none;
+    font-family:'Arial';
+    line-height: 24px;
+    font-size: 20px;
+    font-weight: 400;
+}
+.active-side{
+    color: #FAFAFA;
+    border-bottom: 2px #F1CDB3 solid;
+    text-decoration: none;
+    font-family: 'Arial';
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 400;
+    font-style: normal;
+    
+  
+}
+
+.logo-menu {
+    margin-left: 50px;
+}
+.logo-title{
+    margin: 10px 0 5px 0px;
+}
+.little-tittle{
+    margin-bottom: 90px;
+}
+.side-bar{
+    
+    font-size: 40px;
+    color: #F1CDB3;
+    transform: rotate(-90deg);
+    position: relative;
+    top: 10%;
+    left: 85%;
+    cursor: pointer;
+    
+    
+
+
 }
 /* Header ends */
 
@@ -109,6 +221,7 @@ width: 100%;
     justify-content: space-between;
     width: 100%;
     padding-top: 60px;
+    max-height: auto;
     
 }
 .Block-1{
@@ -150,9 +263,89 @@ width: 100%;
        
    }
 .Block-2{
-    width: 58%;
-    height: 728px;
-    background: url(../../assets/images/start-screen-puppy.png)
+    max-width: 58%;
+    height:auto;
+    object-fit: contain;
+}
+.Block-2 img{
+    max-width: 100%;
+    height: auto;
+}
+@media(max-width:768px){
+    .Container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-height:auto;
+        justify-content: space-between;
+        margin-top: -170px;
+    }
+    .Block-2{
+        max-width:580px;
+        max-height:auto;
+        margin-top: 100px;
+        margin-left: 50px;
+    }
+    .Block-2 img{
+         object-fit: contain;
+
+    }
+    .Block-1{
+        width: 400px;
+    }
+    .button-1{
+     margin-left: 80px;
+    }
+    @media(max-width:450px){
+
+        .Container-title{
+            width: 280px;
+            font-size: 35px;
+            margin-left: 70px;
+        }
+        .Container-text{
+            width: 350px;
+            margin-left: 30px;
+            text-align: center;
+
+            
+        }
+        .Block-2 img{
+            object-fit: contain;
+   
+       }
+    }
+    @media(max-width:320px){
+        .block-1{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            flex-direction: column;
+        }
+        .Container-title{
+            font-size: 23px;
+            width: 280px;
+            line-height: 32.5px;
+            height: 64px;
+            text-align: center;
+            margin: 0 auto;
+        }
+        .Container-text{
+            width: 280px;
+            height: 96px;
+            text-align: center;
+            margin:  0 auto;
+            
+            
+        }
+        .Block-2 img{
+            object-fit: contain;
+   
+       }
+       .button-1{
+        margin: 0 auto;
+       }
+    }
 }
 /* About section start */
 .About{
@@ -188,6 +381,36 @@ width: 100%;
     font-weight: 400;
     color: #4C4C4C;
 
+}
+@media(max-width:768px){
+    .About{
+        display: flex;
+        flex-direction: column-reverse;
+        width: 430px;
+        align-items: center;
+    }
+    @media(max-width:320px){
+        .About{
+            width: 270px;
+            margin: 0 auto;
+            
+        }
+        .About-title{
+            font-size: 25px;
+            width: 270px;
+            margin: 0 auto;
+            line-height:32.5px;
+            text-align: center;
+    }
+    .About-text{
+        font-size: 13px;
+        width: 270px;
+        margin: 0 auto;
+        
+        text-align: justify;
+    }
+
+}
 }
 /* Our friends start */
 .Friends{
@@ -252,7 +475,7 @@ img{
     transition: 2s;  
  }
  .Card:hover{
-    background-color: #e1e1e1;
+    border: 1px solid black;
 }
 .Card{
  width: 270px;
@@ -262,6 +485,7 @@ img{
  align-items: center;
  justify-content: center;
  background-color: #FAFAFA;
+ border-radius: 10px;
 
 }
 .Card-button{
@@ -308,6 +532,91 @@ img{
     border:1px #5B483A solid;
 
 }
+.Arrow1{
+    width: 52px;
+    background-repeat: no-repeat;
+    height: 52px;
+    border-radius: 100px;
+    border: 2px #F1CDB3 solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+.arr{
+    position: relative;
+    top: 30%;
+    left: 35%;
+}
+.responsive-arr{
+    display: flex;
+    width: 200px;
+    justify-content: space-between;
+}
+.Arrow1:hover{
+    border: none;
+    background-color: #FDDCC4;
+    cursor:pointer;
+    transition: 2s;
+}
+@media(max-width:768px){
+    .hide-card{
+        display: none;
+    }
+    .Friends{
+        width: 708px;
+        margin: 0 auto;
+     
+    }
+    .Friends-cards{
+        width: 600px;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+    .button-2{
+        width: 260px;
+        margin-top: 42px;
+     }
+     .Card{
+         width: 273px;
+     }
+
+}
+@media(max-width:320px){
+    .hide-card2{
+        display: none;
+    }
+    .Friends{
+        width: 300px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+    }
+    .Card{
+        width: 260px;
+        margin: 0 auto;
+    }
+    .Friends-title{
+        font-size: 24px;
+        line-height:32.5px;
+        width: 280px;
+        letter-spacing: 0.06em;
+        height: 64px;
+    }
+    .Arrow{
+        display: none;
+    }
+    .Card img{
+        width: 230px;
+    }
+    .Arrow1{
+        display: block;
+    }
+    .button-2{
+    width: 260px;
+    margin-top: 42px;
+    }
+}
 
 /* start Help section */
 .Help{
@@ -336,7 +645,8 @@ img{
 
 }
 .icons{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(5, 2fr);
     width: 75%;
     justify-content: space-between;
 }
@@ -350,11 +660,27 @@ img{
     font-weight: 400;
     color: #545454;
 }
-.icons-2{
-    width: 62%;
-    display: flex;
-    justify-content: space-between;
-    margin: 55px 0 100px 0;
+
+@media(max-width:768px){
+    .icons{
+        display: grid;
+    grid-template-columns: repeat(3, 3fr);
+    }
+}
+@media(max-width:320px){
+    .icons{
+        width: 290px;
+        display: grid;
+        grid-template-columns: repeat(2, 2fr);
+    }
+    .Help-title{
+        width: 220px;
+        font-size: 25px;
+        letter-spacing: 0.03em;
+        line-height: 32.4px;
+        height: 64px;
+        text-align: center;
+    }
 }
 /* start donation section */
 .Donation{
@@ -419,6 +745,56 @@ img{
     font-weight: 400;
 
 }
+@media(max-width:768px){
+    .donation-block{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .donation-text{
+        width: 380px;
+        line-height: 18px ;
+    
+ }
+}
+ @media(max-width:320px){
+    .donation-block{
+        width: 280px;
+        margin: 0 auto;
+    }
+    .donation-text{
+        width: 280px;
+        margin: 0 auto;
+    }
+    .donation-title{
+        width: 280px;
+        font-size: 25px;
+        letter-spacing: 0.03em;
+        line-height: 32.4px;
+        height: 64px;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .donation-title1{
+        width: 280px;
+        margin: 20px auto;
+
+    }
+    .credit-card{
+        width: 280px;
+        font-size: 15px;
+    }
+    .donation-img{
+        width: 260px;
+        height: 135px;
+    }
+    .don-img{
+        width: 260px;
+        object-fit: contain;
+    
+    }
+ }
+
 /* Footer start */
 .Footer{
 background: url(../../assets/images/noise_lines_transparent@2X.png), radial-gradient(100% 315.42% at 0% 0%, #5B483A 0%, #262425 100%);
@@ -462,4 +838,43 @@ width: 100%;
     line-height: 45.5px;
     color: #FFFFFF;
     letter-spacing: 2px;
+}
+.resp-img{
+    display: none;
+}
+@media(max-width:768px) {
+    .Footer{
+        display: flex;
+        flex-direction: column;
+    }
+    .Footer-block{
+        display: flex;
+    }
+    .Footer-img{
+        display: none;
+    }
+    .resp-img{
+        display: block;
+        width: 300px;
+        height: 310px;
+        
+        
+    }
+    .foot-resp{
+        width: 280px;
+        object-fit: contain;
+        padding-left: 150px;
+    }
+}
+@media(max-width:320px){
+    .Footer-img{
+        display: block;
+    }
+    .resp-img{
+        display: none;
+    }
+    .Footer-block{
+        display: flex;
+        flex-direction: column;
+    }
 }
