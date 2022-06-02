@@ -16,11 +16,36 @@
     <section id="myPage" class="Section-1">
         <div class="Section-2">
         <header class="Header">
-            <div class="Container-one">
+
+            <div id="sidemn" class="side-menu">
+                <i  id="side-bar"  class="fas fa-bars side-bar"></i>
+                <div class="logo-menu">
+                    <a href="../main/index.html" class="logo">
+                      <h1 class="logo-title">Cozy House</h1>
+                      <div style="color:white ;" class="little-tittle">Shelter for pets in Boston</div>
+                    </a>
+                  
+                    <nav class="side-nav">
+                      <ul class="unordered-lists">
+                        <li>
+                          <a href="../main/index.html" class="active-side"
+                            >About the shelter</a
+                          >
+                        </li>
+                        <li>
+                          <a href="../pets/pets.html" class="side-a">Our pets</a>
+                        </li>
+                        <li><a href="../main/index.html#help" class="side-a">Help the shelter</a></li>
+                        <li><a href="#footer" class="side-a">Contacts</a></li>
+                      </ul>
+                    </nav>
+                  </div>
+            </div>
+            <div id="cont-1" class="Container-one">
                 <a href="index.html"  style="text-decoration: none;"><h1>Cozy House</h1></a>
                 <p>Shelter for pets in boston</p>
             </div>
-            <nav >
+            <nav  class="Header-nav">
                 <ul>
                 <li><a href="" class="active" > About the Shelter  </a> </li>
                 <li><a href="../pets/pets.html" target="_blank" class="diff-a" > Our pets </a> </li>
@@ -32,20 +57,21 @@
         </header>
         <div class="Container">
              <div class="Block-1">
-                <h2 class="Container-title">Not only people need a house</h2>
+                <h2 class="Container-title">Not only people <br> need a house</h2>
                 <p class="Container-text">We offer to give a chance to a little and nice puppy with an extremely wide and open heart.
                     He or she will loveyou more than anybody else in the world, you will see!
                 </p>
                 <button id="myButton" class="button-1" >Make a friend</button>
             </div> 
             <div class="Block-2">
+                <img id="notonly" src="../../assets/images/start-screen-puppy.png" alt="">
             </div>
         </div>
     </div>
     </section>
     <section class="About">
         <div class="About-img">
-
+           <!-- <img src="../../assets/images/about-pets.png" alt=""> -->
         </div>
         <div class="About-block">
             <h3 class="About-title">About the shelter “Cozy House”</h3>
@@ -69,12 +95,12 @@
                  <p>Katerine</p>
                  <button class="Card-button">Learn more</button>
              </div>
-             <div class="Card">
+             <div class="Card hide-card2">
                  <img src="../../assets/images/Jennifer.png" alt="Jennifer image">
                  <p>Jennifer</p>
                  <button class="Card-button">Learn more</button>
              </div>
-             <div class="Card">
+             <div class="Card hide-card">
                  <img src="../../assets/images/Woody.png" alt="Woody image">
                  <p>Woody</p>
                  <button class="Card-button">Learn more</button>
@@ -85,6 +111,14 @@
                <img src="../../assets/images/Arrow-2.png" alt="Arrow">
            </div>
        </div>
+       <div class="responsive-arr">
+       <div class="Arrow1">
+        <img class="arr" src="../../assets/images/Arrow-1.png" alt="Arrow">
+       </div>
+       <div class="Arrow1">
+        <img class="arr" src="../../assets/images/Arrow-2.png" alt="Arrow">
+    </div>
+        </div>
        <button id="myButton-2" class="button-2" >Get to know the rest</button>
     </section>
     <section id="help" class="Help">
@@ -111,8 +145,6 @@
                 <p>Shampoos</p>
             </div>
 
-        </div>
-        <div class="icons-2">
             <div class="icons-1">
                 <img src="../../assets/icons/vitamins.svg" alt="image">
                 <p>Vitamins</p>
@@ -130,11 +162,12 @@
                 <p>Sleeping area</p>
             </div>
         </div>
+
     </section>
        <section class="Donation">
         <div class="donation-block">
                 <div class="donation-img">
-                    <img src="../../assets/images/donation-dog.png" alt="image">
+                    <img class="don-img" src="../../assets/images/donation-dog.png" alt="image">
                 </div>
                 <div>
                     <h3 class="donation-title">You can also make donation</h3>
@@ -184,20 +217,15 @@
                <img src="../../assets/images/footer-puppy.png" alt="image of puppy">
            </div>
         </div>
+        <div class="resp-img">
+            <img class="foot-resp" src="../../assets/images/footer-puppy.png" alt="image of puppy">
+        </div>
        </footer>
 
 
     <!-- Pure JavaScript -->
 </main>
-<script>
-    document.getElementById("myButton").onclick = function () {
-        location.href = "#ourFriends";
-    };
-</script>
-<script>
-    document.getElementById("myButton-2").onclick = function () {
-        location.href = "../pets/pets.html";
-    };
-</script>
+<script src="./app.js"></script>
+
 </body>
 </html>
