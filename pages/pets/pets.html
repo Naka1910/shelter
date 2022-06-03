@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Our Pets</title>
+    <script src="https://kit.fontawesome.com/9879aac9a6.js" crossorigin="anonymous"></script>   
     <link rel="stylesheet" href="../pets/normalize.css">
     <link rel="stylesheet" href="../pets/fonts.css">
     <link rel="stylesheet" href="../pets/style.css">
@@ -13,12 +14,38 @@
 <main>
     <header class="Header">
         <div class="Container">
-            <div class="Header-block">
+            <div id="sidemn" class="side-menu">
+                <i  id="side-bar"  class="fas fa-bars side-bar"></i>
+            
+                <div class="logo-menu">
+                    <a href="../main/index.html" class="logo">
+                      <h2 class="logo-title">Cozy House</h2>
+                      <div style="color:white ;" class="little-tittle">Shelter for pets in Boston</div>
+                    </a>
+                
+                  
+                    <nav class="side-nav">
+                      <ul class="unordered-lists">
+                        <li>
+                          <a href="../main/index.html" class="side-a"
+                            >About the shelter</a
+                          >
+                        </li>
+                        <li>
+                          <a href="../pets/pets.html" class="active-side">Our pets</a>
+                        </li>
+                        <li><a href="../main/index.html#help" class="side-a">Help the shelter</a></li>
+                        <li><a href="#footer" class="side-a">Contacts</a></li>
+                      </ul>
+                    </nav>
+                  </div>
+            </div>
+            <div id="cont-1" class="Header-block">
             <a href="../pets/pets.html"  style="text-decoration: none;"><h1>Cozy House</h1></a>
             <h4>Shelter for pets in Boston</h4>
             </div>
        
-        <nav>
+        <nav class="Header-nav">
             <ul>
             <li><a href="../main/index.html" class="diff-a" > About the Shelter  </a> </li>
             <li><a href="../pets/pets.html" target="_blank" class="active"  > Our pets </a> </li>
@@ -26,47 +53,48 @@
             <li><a href="#contact" class="diff-a" > Contacts </a> </li>
             </ul> 
         </nav> 
+        <i  id="bar"  class="fas fa-bars bar-menu"></i>
     </div>
     </header>
     <section class="Section">
         <h3 class="Section-title">Our friends who <br /> are looking for a house</h3>
         <div class="Cards-wrapper">
             <div class="Cards active-cards" >
-                <img src="../../assets/images/Katerine.png" alt="">
+                <img src="../../assets/images/Katerine.png" alt="image">
                 <p>Katerine</p>
                 <button class="Card-button">Learn more</button>
             </div>
             <div class="Cards active-cards">
-                <img src="../../assets/images/Jennifer.png" alt="">
+                <img src="../../assets/images/Jennifer.png" alt="image">
                 <p>Jennifer</p>
                 <button class="Card-button">Learn more</button>
             </div>
             <div class="Cards active-cards">
-                <img src="../../assets/images/Woody.png" alt="">
+                <img src="../../assets/images/Woody.png" alt="image">
                 <p>Woody</p>
                 <button class="Card-button">Learn more</button>
             </div>
-            <div class="Cards active-cards">
-                <img src="../../assets/images/Sophia.png" alt="">
+            <div class="Cards active-cards hide1">
+                <img src="../../assets/images/Sophia.png" alt="image">
                 <p>Sophia</p>
                 <button class="Card-button">Learn more</button>
             </div>
-            <div class="Cards">
-                <img src="../../assets/images/Timmy.png" alt="">
+            <div class="Cards hide1">
+                <img src="../../assets/images/Timmy.png" alt="image">
                 <p>Timmy</p>
                 <button class="Card-button">Learn more</button>
             </div>
-            <div class="Cards">
-                <img src="../../assets/images/Charly.png" alt="">
+            <div class="Cards hide1">
+                <img src="../../assets/images/Charly.png" alt="image">
                 <p>Charly</p>
                 <button class="Card-button">Learn more</button>
             </div>
-            <div class="Cards">
+            <div class="Cards hide">
                 <img src="../../assets/images/Scarlett.png" alt="">
                 <p>Scarlett</p>
                 <button class="Card-button">Learn more</button>
             </div>
-            <div class="Cards">
+            <div class="Cards hide">
                 <img src="../../assets/images/Freddie.png" alt="">
                 <p>Freddie</p>
                 <button class="Card-button">Learn more</button>
@@ -78,17 +106,17 @@
     <section class="section-1">
      <div class="Nav-btns">
          <button class="Diss-btn" type="button" data-dissanled>
-            <img src="../../assets/icons/Arrow-left1.svg" alt="">
+            <img src="../../assets/icons/Arrow-left1.svg" alt="image">
          </button>
          <button class="Diss-btn" type="button" data-dissanled>
-            <img src="../../assets/icons/Arrow-left2.svg" alt="">
+            <img src="../../assets/icons/Arrow-left2.svg" alt="image">
          </button>
          <button class="num-btn">1</button>
          <button class="act-btn">
-             <img src="../../assets/icons/Arrow-right1.svg" alt="">
+             <img src="../../assets/icons/Arrow-right1.svg" alt="image">
          </button>
          <button class="act-btn">
-             <img src="../../assets/icons/Arrow-right2.svg" alt="">
+             <img src="../../assets/icons/Arrow-right2.svg" alt="image">
          </button>
      </div>
     </section>
@@ -128,7 +156,11 @@
                 <img src="../../assets/images/footer-puppy.png" alt="image of puppy">
             </div>
          </div>
+         <div class="resp-img">
+            <img class="foot-resp" src="../../assets/images/footer-puppy.png" alt="image of puppy">
+        </div>
         </footer>
 </main>
+<script src="./app.js"></script>
 </body>
 </html>

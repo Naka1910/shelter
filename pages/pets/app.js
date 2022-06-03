@@ -1,9 +1,3 @@
-document.getElementById("myButton").onclick = function () {
-    location.href = "#ourFriends";
-};
-document.getElementById("myButton-2").onclick = function () {
-    location.href = "../pets/pets.html";
-};
 document.getElementById("bar").onclick = function(){
     let sdmenu =document.getElementById("sidemn");
     sdmenu.style ="display: block";
@@ -23,6 +17,4 @@ document.getElementById("side-bar").onclick = function (){
     barmenu.style ="display: block";
     let ntonly =document.getElementById("notonly");
     ntonly.style ="display: block";
-
-
 }

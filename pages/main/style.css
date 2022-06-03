@@ -133,11 +133,7 @@ width: 100%;
     }
     
 }
-/* @media(max-width:720px){
-    .bar-menu{
-        display: none;
-    }
-} */
+
 .side-menu{
     position: absolute;
     top: -30px;
@@ -206,10 +202,6 @@ width: 100%;
     top: 10%;
     left: 85%;
     cursor: pointer;
-    
-    
-
-
 }
 /* Header ends */
 
@@ -569,7 +561,7 @@ img{
      
     }
     .Friends-cards{
-        width: 600px;
+        width: 400px;
         margin-right: 10px;
         margin-left: 10px;
     }
@@ -579,9 +571,31 @@ img{
      }
      .Card{
          width: 273px;
+         margin-left: 30px;
+     }
+     .Arrow{
+         display:none;
+
      }
 
 }
+@media(max-width:635px){
+    .Friends{
+        max-width: 350px;
+    }
+    .hide-card2{
+        display: none;
+    }
+    .Friends-cards{
+        align-items: center;
+        margin: 0 auto;
+    }
+    .Friends-title{
+        font-size: 30px;
+        margin: 0 auto;
+    }
+}
+
 @media(max-width:320px){
     .hide-card2{
         display: none;
