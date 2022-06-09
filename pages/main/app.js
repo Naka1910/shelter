@@ -24,5 +24,4 @@ document.getElementById("side-bar").onclick = function (){
     let ntonly =document.getElementById("notonly");
     ntonly.style ="display: block";
 }
-
-alert("i am not finished, please don't check work yet <3")
+alert("i am not finished, please don't check work yet <3");
