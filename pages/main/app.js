@@ -23,6 +23,6 @@ document.getElementById("side-bar").onclick = function (){
     barmenu.style ="display: block";
     let ntonly =document.getElementById("notonly");
     ntonly.style ="display: block";
-
-
 }
+
+alert("i am not finished, please don't check work yet <3")
