@@ -18,3 +18,18 @@ document.getElementById("side-bar").onclick = function (){
     let ntonly =document.getElementById("notonly");
     ntonly.style ="display: block";
 }
+
+document.getElementById("side-help").onclick= function (){
+    let sdmenu =document.getElementById("sidemn");
+    sdmenu.style ="display:none";
+    let barmenu = document.getElementById("bar");
+     barmenu.style ="display: block";
+
+   }
+   document.getElementById("side-contact").onclick =function(){
+    let sdmenu =document.getElementById("sidemn");
+    sdmenu.style ="display:none";
+    let barmenu = document.getElementById("bar");
+     barmenu.style ="display: block";
+
+   }
