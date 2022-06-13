@@ -518,3 +518,18 @@ function carusel(data) {
     
     
     }
+
+   document.getElementById("side-help").onclick= function (){
+    let sdmenu =document.getElementById("sidemn");
+    sdmenu.style ="display:none";
+    let barmenu = document.getElementById("bar");
+     barmenu.style ="display: block";
+
+   }
+   document.getElementById("side-contact").onclick =function(){
+    let sdmenu =document.getElementById("sidemn");
+    sdmenu.style ="display:none";
+    let barmenu = document.getElementById("bar");
+     barmenu.style ="display: block";
+
+   }
